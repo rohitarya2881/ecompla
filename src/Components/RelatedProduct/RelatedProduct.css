@@ -1,0 +1,27 @@
+.related-products-container {
+    padding: 20px;
+  }
+  
+  .product{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+gap:10px;
+  }
+  
+  .products h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .products hr {
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  @media (max-width: 400px) {
+    .product{
+     gap:0;
+    }
+   }

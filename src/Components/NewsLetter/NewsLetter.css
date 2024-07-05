@@ -1,0 +1,98 @@
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem auto;
+    width: 80%;
+    max-width: 600px;
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+    border-radius: 0.625rem; /* 10px */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* 0 4px 8px */
+    box-sizing: border-box;
+}
+
+.newsletter h1 {
+    font-size: 2rem; /* 32px */
+    color: #171717;
+    margin-bottom: 1rem; /* 16px */
+}
+
+.newsletter p {
+    font-size: 1rem; /* 16px */
+    color: #555;
+    margin-bottom: 1.5rem; /* 24px */
+}
+
+.newsletter input[type="email"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.75rem; /* 12px */
+    border: 1px solid #ccc;
+    border-radius: 0.5rem; /* 8px */
+    margin-bottom: 1rem; /* 16px */
+    font-size: 1rem; /* 16px */
+}
+
+.newsletter button {
+    width: 100%;
+    max-width: 200px;
+    padding: 0.75rem; /* 12px */
+    border: none;
+    border-radius: 0.5rem; /* 8px */
+    background-color: #ff4141;
+    color: white;
+    font-size: 1rem; /* 16px */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter button:hover {
+    background-color: #333;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .newsletter {
+        width: 90%;
+    }
+
+    .newsletter h1 {
+        font-size: 1.75rem; /* 28px */
+    }
+
+    .newsletter p {
+        font-size: 0.875rem; /* 14px */
+    }
+
+    .newsletter input[type="email"] {
+        font-size: 0.875rem; /* 14px */
+    }
+
+    .newsletter button {
+        font-size: 0.875rem; /* 14px */
+    }
+}
+
+@media (max-width: 480px) {
+    .newsletter {
+        width: 95%;
+    }
+
+    .newsletter h1 {
+        font-size: 1.5rem; /* 24px */
+    }
+
+    .newsletter p {
+        font-size: 0.75rem; /* 12px */
+    }
+
+    .newsletter input[type="email"] {
+        font-size: 0.75rem; /* 12px */
+    }
+
+    .newsletter button {
+        font-size: 0.75rem; /* 12px */
+    }
+}

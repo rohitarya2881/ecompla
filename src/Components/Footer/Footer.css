@@ -1,0 +1,130 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #171717;
+    color: white;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.footer-logo i {
+    font-size: 2rem; /* Adjusted for better fit */
+    margin-right: 0.5rem;
+}
+
+.footer-logo p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+    padding: 0;
+}
+
+.footer-links li {
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.footer-links li:hover {
+    text-decoration: underline;
+}
+
+.footer-social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer-icons-container {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 50%;
+    color: #171717;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.footer-icons-container i {
+    font-size: 1rem;
+}
+
+.footer-icons-container:hover {
+    background-color: #ff4141;
+    color: white;
+}
+
+.footer-copywrite {
+    width: 100%;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.footer-copywrite hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #555;
+    margin-bottom: 1rem;
+}
+
+.footer-copywrite p {
+    font-size: 0.875rem;
+    color: #aaa;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .footer-social-icons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-logo i {
+        font-size: 1.5rem; /* Adjusted for better fit */
+    }
+
+    .footer-logo p {
+        font-size: 1.25rem;
+    }
+
+    .footer-links {
+        gap: 0.5rem;
+    }
+
+    .footer-links li {
+        font-size: 0.875rem;
+    }
+
+    .footer-icons-container {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .footer-icons-container i {
+        font-size: 0.75rem;
+    }
+
+    .footer-copywrite p {
+        font-size: 0.75rem;
+    }
+}

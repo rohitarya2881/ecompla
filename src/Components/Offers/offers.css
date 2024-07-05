@@ -1,0 +1,119 @@
+.offers {
+    display: flex;
+    width: 85%;
+    height: 60vh;
+    margin: 1rem auto;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+    border-radius: 0.625rem; /* 10px */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* 0 4px 8px */
+    margin-bottom: 9.375rem; /* 150px */
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.offers-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.offers-left h1 {
+    font-size: 3.125rem; /* 50px */
+    color: #171717;
+    font-weight: 600;
+    margin: 0;
+}
+
+.offers-left p {
+    font-size: 1.375rem; /* 22px */
+    color: #555;
+    font-weight: 600;
+    margin: 1.25rem 0; /* 20px */
+}
+
+.offers-left button {
+    width: 100%;
+    max-width: 17.625rem; /* 282px */
+    height: 3.125rem; /* 50px */
+    border-radius: 1.25rem; /* 25px */
+    background: #ff4141;
+    border: none;
+    color: white;
+    font-size: 1.125rem; /* 18px */
+    font-weight: 500;
+    margin-top: 1.25rem; /* 20px */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.offers-left button:hover {
+    background-color: #333;
+}
+
+.offers-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.offers-right img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 0.625rem; /* 10px */
+    mix-blend-mode: multiply;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .offers {
+        flex-direction: row;
+        height: auto;
+        margin-bottom: 4.375rem; /* 70px */
+    }
+
+    .offers-left h1 {
+        font-size: 2.5rem; /* 40px */
+    }
+
+    .offers-left p {
+        font-size: 1.125rem; /* 18px */
+    }
+
+    .offers-left button {
+        max-width: 100%;
+        height: 2.5rem; /* 40px */
+        font-size: 1rem; /* 16px */
+    }
+
+    .offers-right {
+        padding: 0;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .offers-left h1 {
+        font-size: 1rem; /* 32px */
+    }
+
+    .offers-left p {
+        font-size: .5rem; /* 16px */
+    }
+
+    .offers-left button {
+        height: 1rem; /* 32px */
+        font-size: 0.875rem; /* 14px */
+    }
+}

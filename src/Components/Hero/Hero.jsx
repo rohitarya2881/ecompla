@@ -1,32 +1,24 @@
 import React from 'react';
-import hero_img from '../Assets/hero-img.jpg';
-import hand_icon from '../Assets/hand-icon.png';
-import arrow_icon from '../Assets/arrow-icon.png';
-import "./Hero.css";
-
-const Hero = () => {
-  return (
-    <div className="hero">
-      <div className="hero-left">
-        <h2>NEW ARRIVAL ONLY</h2>
-        <div>
-          <div className="hero-hand-icon">
-            <p>new</p>
-            <img src={hand_icon} alt="hand icon" />
-          </div>
-          <p>Collections</p>
-          <p>for everyone</p>
+import '../Navbar/Navbar.css'; // Ensure you have BannerSection.css for styling
+import img1 from "../Assets/allObject/product/p18.jpeg"
+const BannerSection = () => {
+    return (
+        <div className="banner-section">
+            <div className="banner-left">
+                <div className="banner-content">
+                    <p className="banner-title">Most sold items</p>
+                    <p className="banner-brand">Brand Name</p>
+                    <p>Buy now</p>
+                    <p>Know More</p>
+                </div>
+            </div>
+            <div className="banner-right">
+                <div className="banner-img">
+                    <img src={img1} alt="Product Image" />
+                </div>
+            </div>
         </div>
-        <div className="hero-latest-btn">
-          <div>Latest Collection</div>
-          <img src={arrow_icon} alt="arrow icon" />
-        </div>
-      </div>
-      <div className="hero-right">
-        <img src={hero_img} alt="hero" />
-      </div>
-    </div>
-  );
+    );
 }
 
-export default Hero;
+export default BannerSection;
